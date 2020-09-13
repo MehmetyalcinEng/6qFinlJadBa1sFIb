@@ -19,9 +19,13 @@
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",
     "@angular/router": "~9.1.0",
+    "bootstrap": "^4.5.2",
     "rxjs": "~6.5.4",
+    "rxjs-compat": "^6.6.3",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "json-server": "^0.16.1",
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.0",
@@ -43,5 +47,6 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
+    
   }
 }

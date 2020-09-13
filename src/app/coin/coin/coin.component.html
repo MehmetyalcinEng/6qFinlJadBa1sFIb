@@ -1,0 +1,30 @@
+
+<div class="container mt-3" *ngIf="veri">
+ <table class="table table-striped">
+    <tr>
+  
+    <th> {{veri.bpi.EUR.description}}</th>
+    <th> {{veri.bpi.GBP.description}}</th>
+    <th> {{veri.bpi.USD.description}}</th>
+   </tr>
+   <tr>
+    <td *ngIf="veri.bpi.EUR.rate != veriyedek.bpi.EUR.rate" style="background-color: red;">{{veri.bpi.EUR.rate}}&euro;</td>
+    <td *ngIf="veri.bpi.EUR.rate == veriyedek.bpi.EUR.rate" style="color: green;">{{veri.bpi.EUR.rate}}&euro;</td>
+    <td *ngIf="veri.bpi.GBP.rate != veriyedek.bpi.GBP.rate" style="background-color: red;">{{veri.bpi.GBP.rate}}&pound;</td>
+    <td *ngIf="veri.bpi.GBP.rate == veriyedek.bpi.GBP.rate" style="color: green;">{{veri.bpi.GBP.rate}}&pound;</td>
+
+    <td *ngIf="veri.bpi.USD.rate != veriyedek.bpi.USD.rate" style="background-color: red;">{{veri.bpi.USD.rate}}&#36;</td>
+    <td *ngIf="veri.bpi.USD.rate == veriyedek.bpi.USD.rate" style="color: green;">{{veri.bpi.USD.rate}}&#36;</td>
+
+   </tr>
+
+   <tr>
+     <td>{{veri.time.updated}}</td>
+     <td>{{veri.time.updatedISO}}</td>
+     <td>{{veri.time.updateduk}}</td>
+
+   </tr>
+ </table>
+
+ <button type="btn" class="btn btn-primary" (click)="guncelle()">Güncelle</button>
+</div>
